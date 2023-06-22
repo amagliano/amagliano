@@ -59,7 +59,7 @@ jobs:
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
-          template: repository
+          template: classic
           base: repositories
   activity_community:
     runs-on: ubuntu-latest
