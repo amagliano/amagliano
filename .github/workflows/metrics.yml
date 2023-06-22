@@ -56,7 +56,7 @@ jobs:
         with:
           filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
           template: repository
@@ -68,7 +68,7 @@ jobs:
         with:
           filename: activity_community.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
           template: classic
