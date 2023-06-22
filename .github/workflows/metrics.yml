@@ -14,7 +14,7 @@ jobs:
         with:
           filename: header.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
           template: classic
@@ -26,7 +26,7 @@ jobs:
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           user: amagliano
           base: achievements
           plugin_achievements: yes
@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.calendar.svg
+          filename: calendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_calendar: yes
@@ -48,12 +48,13 @@ jobs:
     steps:  
       - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.topics.icons.svg
+          filename: icons.svg
           token: NOT_NEEDED
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: icons
+          plugin_topics_sort: activity
   repositories:
     runs-on: ubuntu-latest
     steps:
@@ -61,7 +62,7 @@ jobs:
         with:
           filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
           template: classic
@@ -73,7 +74,7 @@ jobs:
         with:
           filename: activity_community.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
           template: classic
