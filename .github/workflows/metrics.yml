@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
   push: {branches: ["main"]}
 jobs:
+  # <-- START METRICS PLUGINS -->
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
@@ -39,22 +40,10 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: calendar.svg
+          filename: isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_calendar: yes
-  icons:
-    runs-on: ubuntu-latest
-    steps:  
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: icons.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: icons
-          plugin_topics_sort: activity
+          plugin_isocalendar: yes
   repositories:
     runs-on: ubuntu-latest
     steps:
@@ -79,3 +68,15 @@ jobs:
           user: amagliano
           template: classic
           base: activity, community
+  # <-- END METRICS PLUGINS -->
+  # <-- START BADGES PLUGINS -->
+  creadly-badges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Badges
+        uses: pemtajo/badge-readme@main
+        with:       
+          CREDLY_USER: agustin-magliano
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          BADGE_SIZE: 80
+  # <-- END BADGES PLUGINS -->
