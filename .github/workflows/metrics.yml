@@ -18,7 +18,7 @@ jobs:
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
-          template: classic
+          template: repository
           base: header
   achievements:
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
           plugin_achievements_secrets: yes      # Display unlocked secrets achievements
           plugin_achievements_display: compact  # Use compact display
           plugin_achievements_limit: 0          # Display all unlocked achievements (no limit)
-  calendar:
+  isocalendar:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
@@ -53,20 +53,21 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
+          base: ""
           user: amagliano
-          template: classic
-          base: repositories
-  activity_community:
+          template: repository
+          plugin_repositories_affiliations: collaborator
+  activity-community:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: activity_community.svg
+          filename: activity-community.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
-          template: classic
+          template: repository
           base: activity, community
   # <-- END METRICS PLUGINS -->
   # <-- START BADGES PLUGINS -->
@@ -78,5 +79,5 @@ jobs:
         with:       
           CREDLY_USER: agustin-magliano
           GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
-          BADGE_SIZE: 80
+          BADGE_SIZE: 110
   # <-- END BADGES PLUGINS -->
