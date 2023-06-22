@@ -61,6 +61,7 @@ jobs:
           user: amagliano
           template: classic
           base: repositories
+          repositories_affiliations: owner, collaborator
   activity_community:
     runs-on: ubuntu-latest
     steps:
