@@ -1,16 +1,18 @@
-### Hi there 👋
-
-<!--
-**amagliano/amagliano** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<a href="https://github.com/amagliano">
+  <img align="center" width="50%" src="./header.svg" />
+</a>
+<a href="https://github.com/amagliano">
+  <img align="center" width="50%" src="./repositories.svg" />
+</a>
+<a href="https://github.com/amagliano">
+  <img align="center" width="49%" src="./activity_community.svg" />
+</a>
+<a href="https://github.com/amagliano">
+  <img align="center" width="49%" src="./calender.svg" />
+</a>
+<a href="https://github.com/amagliano">
+    <img align="center" width="50%" src="./achievements.svg" />
+</a>
+<a href="https://github.com/amagliano">
+    <img align="center" width="50%" src="./icons.svg" />
+</a>
