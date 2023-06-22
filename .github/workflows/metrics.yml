@@ -18,7 +18,7 @@ jobs:
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
-          template: repository
+          template: classicssic
           base: header
   achievements:
     runs-on: ubuntu-latest
@@ -55,7 +55,7 @@ jobs:
           # Options
           base: ""
           user: amagliano
-          template: repository
+          template: classic
           plugin_repositories_affiliations: collaborator
   activity-community:
     runs-on: ubuntu-latest
@@ -67,7 +67,7 @@ jobs:
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
-          template: repository
+          template: classic
           base: activity, community
   # <-- END METRICS PLUGINS -->
   # <-- START BADGES PLUGINS -->

@@ -20,7 +20,7 @@
 
 ---
 
-### 🚀 Skills
+## 🚀 Skills
 
 <img align="left" alt="Azure" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" />
 <img align="left" alt="AWS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" />
@@ -39,7 +39,7 @@
 
 #
 
-### ⭐ Certifications
+## ⭐ Certifications
 
 <!--START_SECTION:badges-->
 [![Microsoft Certified: DevOps Engineer Expert](https://images.credly.com/size/80x80/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png)](http://www.credly.com/badges/549c553e-1c75-415b-b9ad-c26b7adeac01 "Microsoft Certified: DevOps Engineer Expert")
