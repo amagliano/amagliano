@@ -56,27 +56,23 @@ jobs:
         with:
           filename: repositories.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           # Options
-          base: ""
           user: amagliano
-          template: classic
-          plugin_repositories: yes
-          plugin_repositories_affiliations: collaborator
-  activity:
+          template: repository
+          base: repositories
+  activity_community:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: activity.svg
+          filename: activity_community.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           # Options
-          base: ""
-          template: repository
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 0
-          plugin_activity_filter: pr, comment, ref/create, review, push
+          user: amagliano
+          template: classic
+          base: activity, community
   # <-- END METRICS PLUGINS -->
   # <-- START BADGES PLUGINS -->
   creadly-badges:
