@@ -18,7 +18,7 @@ jobs:
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
           user: amagliano
-          template: classicssic
+          template: classic
           base: header
   achievements:
     runs-on: ubuntu-latest
@@ -42,8 +42,13 @@ jobs:
         with:
           filename: isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
+          # Options
+          user: amagliano
+          template: classic
           base: ""
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
   repositories:
     runs-on: ubuntu-latest
     steps:
@@ -56,19 +61,22 @@ jobs:
           base: ""
           user: amagliano
           template: classic
+          plugin_repositories: yes
           plugin_repositories_affiliations: collaborator
-  activity-community:
+  activity:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: activity-community.svg
+          filename: activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
           # Options
-          user: amagliano
-          template: classic
-          base: activity, community
+          base: ""
+          template: repository
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 0
+          plugin_activity_filter: pr, comment, ref/create, review, push
   # <-- END METRICS PLUGINS -->
   # <-- START BADGES PLUGINS -->
   creadly-badges:
