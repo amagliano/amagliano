@@ -18,7 +18,6 @@
     <img align="center" width="50%" src="./achievements.svg" />
 </a>
 
-#
 
 ## 🚀 Skills
 
@@ -37,12 +36,14 @@
 <img align="left" alt="Bash" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
 <br /><br />
 
-#
 
 ## ⭐ Certifications
 
 <!--START_SECTION:badges-->
-[![Microsoft Certified: DevOps Engineer Expert](https://images.credly.com/size/110x110/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png)](http://www.credly.com/badges/549c553e-1c75-415b-b9ad-c26b7adeac01 "Microsoft Certified: DevOps Engineer Expert")
-[![Microsoft Certified: Azure Administrator Associate](https://images.credly.com/size/110x110/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png)](http://www.credly.com/badges/76b406a5-c17d-46e1-b877-78e814226d47 "Microsoft Certified: Azure Administrator Associate")
-[![AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://images.credly.com/size/110x110/images/107e2eb6-f394-40eb-83d2-d8c9b7d34555/exam-az400-600x600.png)](http://www.credly.com/badges/d7d76cf3-a73f-4094-b0ec-f2053de6c2c9 "AZ-400: Designing and Implementing Microsoft DevOps Solutions")
 <!--END_SECTION:badges-->
+
+<img align="left" alt="Azure Developer Associate" width="90px" style="padding-right:10px;" src="./badges/az-204.png" />
+<img align="left" alt="Azure Administrator Associate" width="90px" style="padding-right:10px;" src="./badges/az-104.png" />
+<img align="left" alt="DevOps Engineer Expert" width="90px" style="padding-right:10px;" src="./badges/az-400.png" />
+<img align="left" alt="Azure Solutions Architect Expert" width="90px" style="padding-right:10px;" src="./badges/az-305.png" />
+
