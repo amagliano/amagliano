@@ -1,6 +1,6 @@
 # 👨‍💻 Agustin Magliano
 
-**`Senior Software Engineer`**
+**`Principal Software Engineer`**
 
 <a href="https://github.com/amagliano">
   <img align="center" width="50%" src="./header.svg" />
@@ -14,9 +14,10 @@
 <a href="https://github.com/amagliano">
   <img align="center" width="49%" src="./isocalendar.svg" />
 </a>
-<a href="https://github.com/amagliano">
+<!-- Temporarily commented due to errors -->
+<!-- <a href="https://github.com/amagliano">
     <img align="center" width="50%" src="./achievements.svg" />
-</a>
+</a> -->
 
 
 ## 🚀 Skills
