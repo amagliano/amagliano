@@ -47,4 +47,4 @@
 <img align="left" alt="Azure Administrator Associate" width="90px" style="padding-right:10px;" src="./badges/az-104.png" />
 <img align="left" alt="DevOps Engineer Expert" width="90px" style="padding-right:10px;" src="./badges/az-400.png" />
 <img align="left" alt="Azure Solutions Architect Expert" width="90px" style="padding-right:10px;" src="./badges/az-305.png" />
-
+<img align="left" alt="AWS DevOps Engineer Professional" width="90px" style="padding-right:10px;" src="./badges/aws-dop-c02.png" />
